@@ -1,0 +1,13 @@
+@use "variables" as var;
+
+.button {
+  padding: 0.5rem;
+  box-shadow: 0 0.4rem 0.6rem var.$color-black-transparency;
+  border-radius: 50%;
+  color: var.$color-white;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 0.1rem 0.1rem var.$color-black-transparency;
+  }
+}

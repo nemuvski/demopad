@@ -1,0 +1,14 @@
+.layout {
+  margin: 6rem auto;
+  padding: 0 0.5rem;
+  width: 100%;
+  max-width: 30rem;
+
+  &__header {
+    margin-bottom: 6rem;
+    text-align: center;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 2rem;
+    word-break: break-all;
+  }
+}

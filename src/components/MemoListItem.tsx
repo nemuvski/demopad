@@ -2,6 +2,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import { Memo } from '~/entities/memo'
 import { useOperationMemo } from '~/hooks/memo'
+import TrashIcon from '~/components/icons/TrashIcon'
 
 type Props = {
   item: Memo
@@ -21,16 +22,18 @@ const MemoListItem: React.FC<Props> = ({ item }) => {
   const { updateMemo, removeMemo } = useOperationMemo()
 
   return (
-    <div>
+    <div className='memo-list-item'>
       <textarea
+        className='memo-list-item__textarea'
         {...register('content', {
           onBlur: handleSubmit((fieldValues) => {
             updateMemo(item.id, fieldValues.content)
           }),
         })}
       />
-      <button type='button' onClick={() => removeMemo(item.id)}>
-        remove
+
+      <button className='button memo-list-item__remove-button' type='button' onClick={() => removeMemo(item.id)}>
+        <TrashIcon />
       </button>
     </div>
   )
