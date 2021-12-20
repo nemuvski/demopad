@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "target": "es2016",
+    "lib": ["dom","es6"],
+    "types": ["cypress"],
+    "isolatedModules": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true
+  },
+  "include": [
+    "./**/*.ts",
+    "../node_modules/cypress"
+  ]
+}

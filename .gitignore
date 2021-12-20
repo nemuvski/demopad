@@ -8,6 +8,11 @@
 # Production
 /dist
 
+# Cypress
+/cypress/screenshots
+/cypress/videos
+/cypress/downloads
+
 # Misc
 .DS_Store
 .env.development
