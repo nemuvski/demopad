@@ -9,4 +9,4 @@ yarn install
 yarn start
 ```
 
-<img src="capture.gif" width="300px" />
+<img src="capture.gif" width="400" />
